@@ -27,7 +27,7 @@ function login($conn, $username, $password) {
 		// Store user info as a session variable
 		$_SESSION['userInfo'] = $row;
 
-		// Get user data from the fetched row
+		
 		$uid = $row['user_id'];
 		$uname = $row['username'];
 		$passHash = $row['password'];
