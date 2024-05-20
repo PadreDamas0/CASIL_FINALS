@@ -80,30 +80,29 @@ if (isset($_POST['logout'])) {
 </head>
 <body>
     <?php 
-    $welcomeMessage = isset($_SESSION['username']) ? "Welcome " . $_SESSION['username'] . " to Joemike Pogi's Canteen" : "Welcome to Joemike Pogi's Canteen!";
+    $welcomeMessage = isset($_SESSION['username']) ? "Welcome " . $_SESSION['username'] . " to the Cafeteria" : "Welcome to the Cafeteria!";
     ?>
 
-    
     <form action="receipt.php" method="GET">
 
         
         <h1><?php echo $welcomeMessage; ?></h1>
         <h2>MENU:</h2>
         <ul>
-            <li>Pizza - 120 PHP</li>
+            <li>Chicken - 120 PHP</li>
             <li>Salad - 80 PHP</li>
-            <li>Sandwhich - 70 PHP</li>
-            <li>Sushi - 100 PHP</li>
-            <li>Tacos - 90 PHP</li>
+            <li>Fishball - 70 PHP</li>
+            <li>Pie - 100 PHP</li>
+            <li>Nachos - 90 PHP</li>
         </ul>
         <p>
             <label for="order">Please select your order:</label>
             <select name="order" id="order">
-                <option value="Pizza">Pizza</option>
+                <option value="Chicken">Chicken</option>
                 <option value="Salad">Salad</option>
-                <option value="Sandwhich">Sandwhich</option>
-                <option value="Sushi">Sushi</option>
-                <option value="Tacos">Tacos</option>
+                <option value="Fishball">Fishball</option>
+                <option value="Pie">Pie</option>
+                <option value="Nachos">Nachos</option>
             </select>
         </p>
         <p><label for="q">Quantity: </label><input type="text" name="q" id="q"></p>
